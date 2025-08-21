@@ -6,7 +6,10 @@ const captainModel=require('./models/captain_model')
  function initializeSocket(server){
     io=socketIo(server,{
         cors:{
-            origin: '*',
+            origin: [
+                "https://uber-flt7prdoy-vaibhav-aroras-projects-3cd4dc08.vercel.app", 
+                "http://localhost:5173" 
+            ],
             methods:['GET','POST']
         }
     });
