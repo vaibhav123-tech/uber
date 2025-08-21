@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 initializeSocket(server);
 
-connecttomongo('mongodb://localhost:27017/uber').then(() => console.log('connected'));
+connecttomongo(process.env.MONGO_URI).then(() => console.log('connected'));
 
 server.listen(port, () => {
     console.log(`Server is running on port ${port}`);
