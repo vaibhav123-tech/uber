@@ -10,7 +10,6 @@ function initializeSocket(server) {
     "https://uber-sigma-nine.vercel.app", // your Vercel project (seen in logs)
     "https://uber-flt7prdoy-vaibhav-aroras-projects-3cd4dc08.vercel.app", // other domain you mentioned
     "http://localhost:5173",
-    "http://localhost:3000"
   ];
 
   io = socketIo(server, {
